@@ -1,5 +1,4 @@
 'use strict';
-
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // BANKIST APP
@@ -63,7 +62,7 @@ const inputClosePin = document.querySelector('.form__input--pin');
 
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
-// LECTURES
+// TEST
 
 const currencies = new Map([
   ['USD', 'United States dollar'],
@@ -74,3 +73,43 @@ const currencies = new Map([
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 /////////////////////////////////////////////////
+
+let arr = ['a', 'b', 'c', 'd', 'e'];
+
+// Practising SLICE Method
+
+console.log(arr.slice(2));
+console.log(arr.slice(2, 4));
+console.log(arr.slice(-2));
+console.log(arr.slice(-1));
+console.log(arr.slice(1, -2));
+
+// Practicing SPLICE Method
+// console.log(arr.splice(2));
+// arr.splice(-1);
+// console.log(arr);
+
+// console.log(arr.splice(1, 2));
+// console.log(arr);
+
+// Reverse() Methods
+
+arr = ['a', 'b', 'c', 'd', 'e'];
+
+let arr2 = ['f', 'g', 'h', 'i', 'j'];
+
+console.log(arr2.reverse());
+console.log(arr2);
+
+// Using CONCAT Method
+
+let connercat = arr.concat(arr2);
+
+// Using JOIN Method
+
+console.log(connercat.join('^'));
+
+// ? Learning new at() Method from ES22
+
+const arre = [23, 11, 64];
+console.log(arre.at(1));
