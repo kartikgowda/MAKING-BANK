@@ -3,7 +3,7 @@
 /////////////////////////////////////////////////
 // BANKIST APP
 
-// Data
+//! DATA
 const account1 = {
   owner: 'Jonas Schmedtmann',
   movements: [200, 450, -400, 3000, -650, -130, 70, 1300],
@@ -34,7 +34,7 @@ const account4 = {
 
 const accounts = [account1, account2, account3, account4];
 
-// Elements
+//! ELEMENTS
 const labelWelcome = document.querySelector('.welcome');
 const labelDate = document.querySelector('.date');
 const labelBalance = document.querySelector('.balance__value');
@@ -62,7 +62,7 @@ const inputClosePin = document.querySelector('.form__input--pin');
 
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
-// TEST
+//! TEST AREA
 
 const currencies = new Map([
   ['USD', 'United States dollar'],
@@ -76,7 +76,7 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 let arr = ['a', 'b', 'c', 'd', 'e'];
 
-// Practising SLICE Method
+//* Practising SLICE Method
 
 console.log(arr.slice(2));
 console.log(arr.slice(2, 4));
@@ -111,5 +111,5 @@ console.log(connercat.join('^'));
 
 // ? Learning new at() Method from ES22
 
-const arre = [23, 11, 64];
-console.log(arre.at(1));
+const arrey = [23, 11, 64];
+console.log(arrey.at(1));
