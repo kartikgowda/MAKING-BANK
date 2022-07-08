@@ -123,20 +123,21 @@ const currencies = new Map([
 
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
-for (const movement of movements) {
+//* Adding tracking of transactions
+for (const [i, movement] of movements.entries()) {
   if (movement > 0) {
-    console.log(`You deposited : ${movement}`);
+    console.log(`Transaction ${i + 1} = You deposited : ${movement}`);
   } else if (movement < 0) {
-    console.log(`You withdrew : ${Math.abs(movement)}`);
+    console.log(`Transaction ${i + 1} =You withdrew : ${Math.abs(movement)}`);
   }
 }
 
 //? Using forEach method
 
-movements.forEach(movement => {
-  if (movement > 0) {
-    console.log(`You deposited : ${movement}`);
-  } else if (movement < 0) {
-    console.log(`You withdrew : ${Math.abs(movement)}`);
+movements.forEach((mov, i, arr) => {
+  if (mov > 0) {
+    console.log(`Transaction ${i + 1}! You deposited : ${mov}`);
+  } else if (mov < 0) {
+    console.log(`Transaction ${i + 1}! You withdrew : ${Math.abs(mov)}`);
   }
 });
