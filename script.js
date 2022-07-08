@@ -70,19 +70,19 @@ const currencies = new Map([
   ['GBP', 'Pound sterling'],
 ]);
 
-const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+// const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 /////////////////////////////////////////////////
 
-let arr = ['a', 'b', 'c', 'd', 'e'];
+// let arr = ['a', 'b', 'c', 'd', 'e'];
 
-//* Practising SLICE Method
+// //* Practising SLICE Method
 
-console.log(arr.slice(2));
-console.log(arr.slice(2, 4));
-console.log(arr.slice(-2));
-console.log(arr.slice(-1));
-console.log(arr.slice(1, -2));
+// console.log(arr.slice(2));
+// console.log(arr.slice(2, 4));
+// console.log(arr.slice(-2));
+// console.log(arr.slice(-1));
+// console.log(arr.slice(1, -2));
 
 // Practicing SPLICE Method
 // console.log(arr.splice(2));
@@ -94,22 +94,49 @@ console.log(arr.slice(1, -2));
 
 // Reverse() Methods
 
-arr = ['a', 'b', 'c', 'd', 'e'];
+// arr = ['a', 'b', 'c', 'd', 'e'];
 
-let arr2 = ['f', 'g', 'h', 'i', 'j'];
+// let arr2 = ['f', 'g', 'h', 'i', 'j'];
 
-console.log(arr2.reverse());
-console.log(arr2);
+// console.log(arr2.reverse());
+// console.log(arr2);
 
-// Using CONCAT Method
+// // Using CONCAT Method
 
-let connercat = arr.concat(arr2);
+// let connercat = arr.concat(arr2);
 
-// Using JOIN Method
+// // Using JOIN Method
 
-console.log(connercat.join('^'));
+// console.log(connercat.join('^'));
 
-// ? Learning new at() Method from ES22
+// //? Learning new at() Method from ES22
 
-const arrey = [23, 11, 64];
-console.log(arrey.at(1));
+// const arrey = [23, 11, 64];
+// console.log(arrey[arrey.length - 1]); //* Returns last element
+// console.log(arrey.at(-1));
+
+// //? Use at() for String
+// const gamerNick = 'iLoseEveryTime';
+// console.log(gamerNick.at(-1));
+
+//? For Each Methods
+
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+
+for (const movement of movements) {
+  if (movement > 0) {
+    console.log(`You deposited : ${movement}`);
+  } else if (movement < 0) {
+    console.log(`You withdrew : ${Math.abs(movement)}`);
+  }
+}
+
+//? Using forEach method
+
+movements.forEach(movement => {
+  if (movement > 0) {
+    console.log(`You deposited : ${movement}`);
+  } else if (movement < 0) {
+    console.log(`You withdrew : ${Math.abs(movement)}`);
+  }
+});
