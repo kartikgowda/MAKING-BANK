@@ -26,7 +26,7 @@ const account3 = {
 };
 
 const account4 = {
-  owner: 'Sarah Smith',
+  owner: 'Will Smith',
   movements: [430, 1000, 700, 50, 90],
   interestRate: 1,
   pin: 4444,
@@ -62,13 +62,26 @@ const inputClosePin = document.querySelector('.form__input--pin');
 
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
-//! TEST AREA
+// //! TEST AREA
 
-const currencies = new Map([
-  ['USD', 'United States dollar'],
-  ['EUR', 'Euro'],
-  ['GBP', 'Pound sterling'],
-]);
+// const currencies = new Map([
+//   ['USD', 'United States dollar'],
+//   ['EUR', 'Euro'],
+//   ['GBP', 'Pound sterling'],
+// ]);
+
+// //? Using forEach for Map function
+// currencies.forEach((value, key, arr) => {
+//   console.log(`${key} - ${value}`);
+// });
+
+// //? Using forEach for Set function
+// const currenciesSet = new Set(['USD', 'EUR', 'GBP', 'USD', 'GBP']);
+// console.log(currenciesSet);
+
+// currenciesSet.forEach((value, key, arr) => {
+//   console.log(`${key} - ${value}`);
+// });
 
 // const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
@@ -119,25 +132,25 @@ const currencies = new Map([
 // const gamerNick = 'iLoseEveryTime';
 // console.log(gamerNick.at(-1));
 
-//? For Each Methods
+// //? For Each Methods
 
-const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+// const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
-//* Adding tracking of transactions
-for (const [i, movement] of movements.entries()) {
-  if (movement > 0) {
-    console.log(`Transaction ${i + 1} = You deposited : ${movement}`);
-  } else if (movement < 0) {
-    console.log(`Transaction ${i + 1} =You withdrew : ${Math.abs(movement)}`);
-  }
-}
+// //* Adding tracking of transactions
+// for (const [i, movement] of movements.entries()) {
+//   if (movement > 0) {
+//     console.log(`Transaction ${i + 1} = You deposited : ${movement}`);
+//   } else if (movement < 0) {
+//     console.log(`Transaction ${i + 1} =You withdrew : ${Math.abs(movement)}`);
+//   }
+// }
 
-//? Using forEach method
+// //? Using forEach method
 
-movements.forEach((mov, i, arr) => {
-  if (mov > 0) {
-    console.log(`Transaction ${i + 1}! You deposited : ${mov}`);
-  } else if (mov < 0) {
-    console.log(`Transaction ${i + 1}! You withdrew : ${Math.abs(mov)}`);
-  }
-});
+// movements.forEach((mov, i, arr) => {
+//   if (mov > 0) {
+//     console.log(`Transaction ${i + 1}! You deposited : ${mov}`);
+//   } else if (mov < 0) {
+//     console.log(`Transaction ${i + 1}! You withdrew : ${Math.abs(mov)}`);
+//   }
+// });
